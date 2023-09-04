@@ -9,14 +9,27 @@
   transform: skewX(-12deg);
   position: relative;
 
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+
+  @include respond(phone) {
+    transform: none;
+  }
+
   & > * {
     transform: skewX(12deg);
+
+    @include respond(phone) {
+      transform: none;
+    }
   }
 
   &__shape {
     width: 15rem;
     height: 15rem;
-    background-color: orangered;
     shape-outside: circle();
     float: left;
     clip-path: circle();
