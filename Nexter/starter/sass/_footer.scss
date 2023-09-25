@@ -1,0 +1,40 @@
+.footer {
+  background-color: $color-secondary;
+  grid-column: full-start / full-end;
+  padding: 8rem;
+}
+
+.nav {
+  list-style: none;
+
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__link:link,
+  &__link:visited {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+    font-family: $font-display;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(white, 0.05);
+    translate: 0 -3px;
+  }
+}
+
+.copyright {
+  font-size: 1.6rem;
+  color: $color-grey-dark-2;
+  margin-top: 6rem;
+  text-align: center;
+}
